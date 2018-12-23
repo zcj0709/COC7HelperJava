@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" styleClass="pane" stylesheets="@total.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc7project.Create_4Controller">
+   <children>
+        <JFXButton layoutX="655.0" layoutY="61.0" onAction="#changeToEntry" styleClass="home-button" text="HOME" textAlignment="RIGHT" />
+         <JFXButton fx:id="nextPage" layoutX="372.0" layoutY="513.0" onAction="#changeToCreateFive" prefHeight="54.0" prefWidth="57.0" text="→" textAlignment="RIGHT">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="41.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40;" text="New Investigator" wrappingWidth="299.30077362060547" />
+      <Text layoutX="41.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="STEP Three: Create backstory    " />
+      <GridPane layoutX="41.0" layoutY="174.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="240" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="450" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="40" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="40" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="40" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXTextField fx:id="description" prefHeight="27.0" prefWidth="452.0" GridPane.columnIndex="1" />
+            <JFXTextField fx:id="ideology" prefHeight="27.0" prefWidth="452.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXTextField fx:id="people" prefHeight="27.0" prefWidth="6.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="location" prefHeight="27.0" prefWidth="452.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <JFXTextField fx:id="possession" prefHeight="27.0" prefWidth="452.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <JFXTextField fx:id="trait" prefHeight="27.0" prefWidth="452.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <JFXTextField fx:id="connection" prefHeight="27.0" prefWidth="452.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <JFXTextField fx:id="detail" prefHeight="27.0" prefWidth="452.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Personal Description:" textAlignment="RIGHT" wrappingWidth="238" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Ideology/Beliefs:" textAlignment="RIGHT" wrappingWidth="238" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Significant People:" textAlignment="RIGHT" wrappingWidth="238" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Meaningful Locations:" textAlignment="RIGHT" wrappingWidth="238" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Treasured Possessions:" textAlignment="RIGHT" wrappingWidth="238" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Traits:" textAlignment="RIGHT" wrappingWidth="238" GridPane.rowIndex="5" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Key Backstory Connection:" textAlignment="RIGHT" wrappingWidth="238" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Additional Details:" textAlignment="RIGHT" wrappingWidth="238" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

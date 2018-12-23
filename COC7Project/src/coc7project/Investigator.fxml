@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" styleClass="pane" stylesheets="@total.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc7project.InvestigatorController">
+   <children>
+      <Text layoutX="61.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40;" text="Investigators" wrappingWidth="226.30077362060547" />
+      <JFXButton layoutX="226.0" layoutY="275.0" onAction="#changeToNew" prefHeight="31.0" prefWidth="304.0" styleClass="addInvestigator" text="+ADD NEW INVESTIGATORS&#10;" textAlignment="CENTER" />
+      <JFXButton layoutX="655.0" layoutY="61.0" onAction="#changeToEntry" styleClass="home-button" text="HOME" textAlignment="RIGHT" />
+      <TextFlow layoutX="61.0" layoutY="127.0" prefHeight="134.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 3;">
+         <children>
+            <Label text="Key aspects you should note include" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;- The period or date when the scenario takes place. &#10;- The location or country in which the game is set. &#10;- The scenario’s initial premise or set-up. &#10;- Does the Keeper recommend any particular occupations? &#10;- Suggestions for how the investigators might know each other." wrappingWidth="277.4453125" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="400.0" layoutY="127.0" prefHeight="134.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 3;">
+         <children>
+            <Label text="Little Hint" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;The Keeper may tell you a great deal or very little about the scenario. Listen to what is said and ask any questions you may have. Once you have an idea for an investigator, run it past your Keeper for approval.&#10;Unless the Keeper states otherwise, it’s a good idea to chat with the other players and bounce ideas around. " wrappingWidth="277.4453125" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="61.0" layoutY="343.0" prefHeight="209.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 3;">
+         <children>
+            <Label text="Enhancing Your Character's Background" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;A characteristic is one of eight numbers that create the foundations for an investigator. In the game, each characteristic represents an aspect of an investigator—intelligence, dexterity, and so on. These identified quantities determine the relative capability of investigators and suggest ways for them to act and react during play.&#10;Characteristic values are generated randomly by rolling&#10;two or more six-sided dice. Each rolled result is then multiplied by 5 to generate a percentage number that may initially range between 15% and 90%." wrappingWidth="277.4453125" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="400.0" layoutY="343.0" prefHeight="134.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 3;">
+         <children>
+            <Label text="Do Low Characteristics Make Poor Investigators?" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;Low characteristic scores do not always mean that the investigator will be hindered and unable to perform as part of the investigator’s group. Often one or two low characteristic scores can help to bring the investigator ‘to life’ and feel more real—as opposed to some incredible superhuman! &#10;Rather than rejecting a low roll, try to incorporate it into the overall makeup of your investigator. Perhaps a low dexterity means that the investigator has suffered some form of leg or hand injury while in the armed forces, or a low education is the result of never attending school and being forced to grow up on the streets." wrappingWidth="277.4453125" />
+         </children>
+      </TextFlow>
+     
+   </children>
+</AnchorPane>

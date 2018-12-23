@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableColumn?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#openDirectory" styleClass="pane" stylesheets="@total.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc7project.Create_5Controller">
+   <children>
+      <JFXButton layoutX="655.0" layoutY="61.0" onAction="#changeToEntry" styleClass="home-button" text="HOME" textAlignment="RIGHT" />
+      <Text layoutX="41.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40;" text="New Investigator" wrappingWidth="299.30077362060547" />
+      <Text layoutX="41.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="STEP 4: Decide Skills and allocate Skill Points" />
+      <JFXTreeTableView fx:id="skillTable" layoutX="41.0" layoutY="155.0" prefHeight="343.0" prefWidth="400">
+            <columns>
+                    <JFXTreeTableColumn fx:id="skillColumn" resizable="false" text="Skills" />
+                    <JFXTreeTableColumn fx:id="initialColumn" resizable="false" text="Inital" />
+                    <JFXTreeTableColumn fx:id="occupationColumn" resizable="false" text="Occupation" />
+                    <JFXTreeTableColumn fx:id="interestColumn" resizable="false" text="Interest" />
+                    <JFXTreeTableColumn fx:id="totalColumn" prefWidth="79.0" resizable="false" text="Total" />
+            </columns> 
+      </JFXTreeTableView>
+      <JFXButton fx:id="finish" layoutX="365.0" layoutY="521.0" onAction="#output" prefHeight="30.0" prefWidth="70.0" styleClass="home-button" text="FINISH" textAlignment="RIGHT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="474.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Occupation points:" />
+      <Text layoutX="508.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Interest points:" />
+      <Text fx:id="occPoint" layoutX="655.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="0" />
+      <Text fx:id="intPoint" layoutX="655.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="0" />
+      <Text fx:id="occ" layoutX="459.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="CHOSEN: Policeman" />
+      <JFXButton fx:id="directory" layoutX="474.0" layoutY="285.0" onAction="#selectDirectory" styleClass="directory-button" text="Select File Save Directory" textAlignment="RIGHT" />
+      <Text fx:id="directoryShow" layoutX="474.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="The directory you choose is:&#10;" />
+      <JFXButton layoutX="474.0" layoutY="468.0" onAction="#openDirectory" styleClass="directory-button" text="Open Directory" textAlignment="RIGHT" />
+<!--      <JFXTreeTableView fx:id="skillTable2" layoutX="400.0" layoutY="152.0" prefHeight="343.0" prefWidth="400">
+            <columns>
+                    <JFXTreeTableColumn fx:id="skill2" resizable="false" text="Skills" />
+                    <JFXTreeTableColumn fx:id="inital2" resizable="false" text="Inital" />
+                    <JFXTreeTableColumn fx:id="occupation2" resizable="false" text="Occupation" />
+                    <JFXTreeTableColumn fx:id="interest2" resizable="false" text="Interest" />
+                    <JFXTreeTableColumn fx:id="total2" resizable="false" text="Total" />
+            </columns> 
+      </JFXTreeTableView>-->
+   </children>
+</AnchorPane>

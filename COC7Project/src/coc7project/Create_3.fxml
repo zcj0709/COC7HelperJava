@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" styleClass="pane" stylesheets="@total.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc7project.Create_3Controller">
+   <children>
+      <JFXButton layoutX="655.0" layoutY="61.0" onAction="#changeToEntry" styleClass="home-button" text="HOME" textAlignment="RIGHT" />
+      <Text layoutX="41.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40;" text="New Investigator" wrappingWidth="299.30077362060547" />
+      <Text layoutX="41.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="STEP TWO: Determine Occupation" />
+       <JFXButton fx:id="nextPage" layoutX="372.0" layoutY="513.0" onAction="#changeToCreateFour" prefHeight="54.0" prefWidth="57.0" text="→" textAlignment="RIGHT">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <ScrollPane layoutX="65.0" layoutY="150.0" prefHeight="200.0" prefWidth="642.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="150.0">
+          
+          <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="653.0">
+               <padding>
+                  <Insets bottom="150.0" />
+               </padding>
+               <children>
+                  <JFXButton fx:id="antiqueDealer" layoutX="14.0" layoutY="14.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="114.0" styleClass="occupation-button" text="Antique Dealer" textAlignment="CENTER" />
+                  <JFXButton fx:id="artist" layoutX="141.0" layoutY="14.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="72.0" styleClass="occupation-button" text="Artist" textAlignment="CENTER" />
+                  <JFXButton fx:id="author" layoutX="318.0" layoutY="14.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="70.0" styleClass="occupation-button" text="Author" textAlignment="CENTER" />
+                  <JFXButton fx:id="clergy" layoutX="402.0" layoutY="14.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="64.0" styleClass="occupation-button" text="Clergy" textAlignment="CENTER" />
+                  <JFXButton fx:id="criminal" layoutX="479.0" layoutY="14.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="78.0" styleClass="occupation-button" text="Criminal" textAlignment="CENTER" />
+                  <JFXButton fx:id="dilettante" layoutX="13.0" layoutY="60.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="82.0" styleClass="occupation-button" text="Dilettante" textAlignment="CENTER" />
+                  <JFXButton fx:id="doctor" layoutX="108.0" layoutY="60.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="70.0" styleClass="occupation-button" text="Doctor" textAlignment="CENTER" />
+                  <JFXButton fx:id="drifter" layoutX="192.0" layoutY="60.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="63.0" styleClass="occupation-button" text="Drifter" textAlignment="CENTER" />
+                  <JFXButton fx:id="engineer" layoutX="268.0" layoutY="60.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="78.0" styleClass="occupation-button" text="Engineer" textAlignment="CENTER" />
+                  <JFXButton fx:id="entertainer" layoutX="358.0" layoutY="60.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="88.0" styleClass="occupation-button" text="Entertainer" textAlignment="CENTER" />
+                  <JFXButton fx:id="athlete" layoutX="228.0" layoutY="14.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="75.0" styleClass="occupation-button" text="Athlete" textAlignment="CENTER" />
+                  <JFXButton fx:id="farmer" layoutX="460.0" layoutY="60.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="70.0" styleClass="occupation-button" text="Farmer" textAlignment="CENTER" />
+                  <JFXButton fx:id="hacker" layoutX="543.0" layoutY="60.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="70.0" styleClass="occupation-button" text="Hacker" textAlignment="CENTER" />
+                  <JFXButton fx:id="journalist" layoutX="13.0" layoutY="109.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="79.0" styleClass="occupation-button" text="Journalist" textAlignment="CENTER" />
+                  <JFXButton fx:id="lawyer" layoutX="108.0" layoutY="109.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="70.0" styleClass="occupation-button" text="Lawyer" textAlignment="CENTER" />
+                  <JFXButton fx:id="militaryOfficer" layoutX="192.0" layoutY="109.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="115.0" styleClass="occupation-button" text="Military Officer" textAlignment="CENTER" />
+                  <JFXButton fx:id="missionary" layoutX="319.0" layoutY="109.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="88.0" styleClass="occupation-button" text="Missionary" textAlignment="CENTER" />
+                  <JFXButton fx:id="musician" layoutX="418.0" layoutY="109.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="78.0" styleClass="occupation-button" text="Musician" textAlignment="CENTER" />
+                  <JFXButton fx:id="psychologist" layoutX="198.0" layoutY="159.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="190.0" styleClass="occupation-button" text="Psychologist/Psychoanalyst" textAlignment="CENTER" />
+                  <JFXButton fx:id="pilot" layoutX="511.0" layoutY="109.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="48.0" styleClass="occupation-button" text="Pilot" textAlignment="CENTER" />
+                  <JFXButton fx:id="police" layoutX="14.0" layoutY="159.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="170.0" styleClass="occupation-button" text="Police Detective/Officer" textAlignment="CENTER" />
+                  <JFXButton fx:id="privateInvestigator" layoutX="403.0" layoutY="159.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="144.0" styleClass="occupation-button" text="Private Investigator" textAlignment="CENTER" />
+                  <JFXButton fx:id="professor" layoutX="559.0" layoutY="159.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="79.0" styleClass="occupation-button" text="Professor" textAlignment="CENTER" />
+                  <JFXButton fx:id="soldier" layoutX="14.0" layoutY="204.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="114.0" styleClass="occupation-button" text="Soldier/Marine" textAlignment="CENTER" />
+                  <JFXButton fx:id="tribeMember" layoutX="142.0" layoutY="204.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="111.0" styleClass="occupation-button" text="Tribe Member" textAlignment="CENTER" />
+                  <JFXButton fx:id="zealot" layoutX="265.0" layoutY="204.0" onAction="#handleButtonClick" prefHeight="31.0" prefWidth="70.0" styleClass="occupation-button" text="Zealot" textAlignment="CENTER" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Text fx:id="occupation" layoutX="370.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Please choose one" />
+   </children>
+</AnchorPane>

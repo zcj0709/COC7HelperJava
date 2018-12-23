@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" styleClass="pane" stylesheets="@total.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc7project.Create_2Controller">
+   <children>
+      <JFXButton layoutX="655.0" layoutY="61.0" onAction="#changeToEntry" styleClass="home-button" text="HOME" textAlignment="RIGHT" />
+      <Text layoutX="41.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40;" text="New Investigator" wrappingWidth="299.30077362060547" />
+      <Text layoutX="41.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="STEP ONE: Generate Characteristics     " />
+      <JFXButton fx:id="nextPage" layoutX="372.0" layoutY="513.0" onAction="#changeToCreateThree" prefHeight="54.0" prefWidth="57.0" text="→" textAlignment="RIGHT">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="51.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Rolling Characteristics:" wrappingWidth="201.5703125" />
+      <GridPane layoutX="44.0" layoutY="153.0" prefHeight="95.0" prefWidth="683.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="130.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="90.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="130.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="110.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="10.0" prefWidth="130.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Name:" textAlignment="RIGHT" wrappingWidth="63.5703125" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Era:" textAlignment="RIGHT" wrappingWidth="63.5703125" GridPane.columnIndex="2" />
+            <JFXTextField id="era" fx:id="name" GridPane.columnIndex="1">
+               <validators>
+                  <RequiredFieldValidator message="Input Required!" />
+               </validators>
+            </JFXTextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Location:" textAlignment="RIGHT" wrappingWidth="80.5703125" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Gender:" textAlignment="RIGHT" wrappingWidth="72.5703125" GridPane.rowIndex="1" />
+            <JFXTextField id="gender" fx:id="gender" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <validators>
+                  <RequiredFieldValidator message="Input Required!" />
+               </validators>
+            </JFXTextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Hometown:" textAlignment="RIGHT" wrappingWidth="114.5703125" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Age:" textAlignment="RIGHT" wrappingWidth="63.5703125" GridPane.columnIndex="4" />
+            <JFXTextField id="hometown" fx:id="hometown" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <validators>
+                  <RequiredFieldValidator message="Input Required!" />
+               </validators>
+            </JFXTextField>
+            <JFXTextField id="age" fx:id="age" GridPane.columnIndex="5">
+               <validators>
+                  <RequiredFieldValidator message="Input Required!" />
+               </validators>
+            </JFXTextField>
+            <JFXTextField id="location" fx:id="location" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <validators>
+                  <RequiredFieldValidator message="Input Required!" />
+               </validators>
+            </JFXTextField>
+            <JFXTextField id="era" fx:id="era" GridPane.columnIndex="3">
+               <validators>
+                  <RequiredFieldValidator message="Input Required!" />
+               </validators>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="89.0" layoutY="324.0" prefHeight="150.0" prefWidth="568.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="190.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="190.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="190.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="str" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Strength:" textAlignment="LEFT" wrappingWidth="140" />
+            <Text fx:id="con" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Constitution:" textAlignment="LEFT" wrappingWidth="140" GridPane.columnIndex="1" />
+            <Text fx:id="app" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Appearance:" textAlignment="LEFT" wrappingWidth="140" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text fx:id="dex" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Dexterity:" textAlignment="LEFT" wrappingWidth="140" GridPane.rowIndex="1" />
+            <Text fx:id="pow" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Power:" textAlignment="LEFT" wrappingWidth="140" GridPane.rowIndex="2" />
+            <Text fx:id="edu" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Education:" textAlignment="LEFT" wrappingWidth="140" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text fx:id="siz" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Size:" textAlignment="LEFT" wrappingWidth="140" GridPane.columnIndex="2" />
+            <Text fx:id="intll" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Intelligence:" textAlignment="LEFT" wrappingWidth="140" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Text fx:id="luck" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Luck:" textAlignment="LEFT" wrappingWidth="140" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Text fx:id="total" layoutX="253.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Total:" textAlignment="LEFT" wrappingWidth="140" />
+
+      
+   </children>
+</AnchorPane>

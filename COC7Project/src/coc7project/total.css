@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 29, 2018, 3:23:07 AM
+    Author     : Chenjun
+*/
+
+.pane{
+    -fx-background-color: #eeeeee;
+    -fx-pref-width: 800;
+    -fx-pref-height: 600;
+}
+
+.addInvestigator{
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: white;
+    -fx-pref-width: 300;
+    -fx-pref-height: 50;
+}
+
+.generate{
+    -jfx-button-type: RAISED;
+}
+
+
+.investigator-button{
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: white;
+    -fx-pref-width: 300;
+    -fx-pref-height: 100;
+}
+
+.occupation-button{
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: white;
+}
+
+.investigator-button-die{
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: #a04848;
+    -fx-pref-width: 300;
+    -fx-pref-height: 100;
+}
+
+.home-button{
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: white;
+    -fx-pref-width: 70;
+    -fx-pref-height: 10;
+}
+
+.dice-button{
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: white;
+    -fx-pref-width: 170;
+    -fx-pref-height: 10;
+}
+
+.directory-button{
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: white;
+    -fx-pref-width: 180;
+    -fx-pref-height: 10;
+}

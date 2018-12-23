@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: #eeeeee;" stylesheets="@total.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc7project.EntryController">
+   <children>
+      <Text layoutX="148.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40; -fx-font-family: arial;" text="Welcome to World of COC" textAlignment="CENTER" />
+      <Text layoutX="178.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20; -fx-font-family: Arial;" text="A game helper for Call of Cthulhu 7th Edition " textAlignment="CENTER" wrappingWidth="444.84375" />
+      <JFXButton id="investigatorEntry" layoutX="295.0" layoutY="284.0" onAction="#changeToInvestigator" prefHeight="32.0" prefWidth="178.0" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="Investigator Entry" />
+      <JFXButton id="coc7" fx:id="coc7" layoutX="295.0" layoutY="379.0" onAction="#changeToIntroduction" prefHeight="32.0" prefWidth="178.0" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="About COC7" />
+      <JFXButton id="exit" fx:id="exitButton" layoutX="295.0" layoutY="436.0" onAction="#exitButtonOnMouseClicked" prefHeight="32.0" prefWidth="178.0" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="Exit" />
+      <JFXButton layoutX="295.0" layoutY="332.0" onAction="#changeToDice" prefHeight="32.0" prefWidth="178.0" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="DICE!" />
+   </children>
+</AnchorPane>
